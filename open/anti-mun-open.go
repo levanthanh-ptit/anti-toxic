@@ -1,6 +1,7 @@
 package main
 
 import (
+	"anti-toxic/osp"
 	"fmt"
 	"log"
 	"os"
@@ -8,7 +9,7 @@ import (
 )
 
 var (
-	path       = "/etc/hosts"
+	path       = osp.GetPath()
 	backupPath = fmt.Sprintf("%s.old", path)
 )
 

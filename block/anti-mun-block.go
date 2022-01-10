@@ -1,6 +1,7 @@
 package main
 
 import (
+	"anti-toxic/osp"
 	"fmt"
 	"log"
 	"os"
@@ -8,8 +9,7 @@ import (
 )
 
 var (
-	// path := "%SystemRoot%\\System32\\drivers\\etc\\hosts"
-	path       = "/etc/hosts"
+	path       = osp.GetPath()
 	backupPath = fmt.Sprintf("%s.old", path)
 	hosts      = []string{"youtube.com", "www.youtube.com"}
 )
