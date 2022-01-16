@@ -2,6 +2,7 @@ package main
 
 import (
 	"anti-toxic/osp"
+	"bufio"
 	"fmt"
 	"log"
 	"os"
@@ -58,4 +59,5 @@ func main() {
 		log.Fatalln("Nothing to open")
 	}
 	fmt.Println("Successfully open!")
+	bufio.NewReader(os.Stdin).ReadBytes('\n')
 }

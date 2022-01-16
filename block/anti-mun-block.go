@@ -2,6 +2,7 @@ package main
 
 import (
 	"anti-toxic/osp"
+	"bufio"
 	"fmt"
 	"log"
 	"os"
@@ -95,4 +96,6 @@ func main() {
 	if _, err := hostFile.WriteString(content); err != nil {
 		log.Fatalln(err)
 	}
+	fmt.Println("Successfully block!")
+	bufio.NewReader(os.Stdin).ReadBytes('\n')
 }
