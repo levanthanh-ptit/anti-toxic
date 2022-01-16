@@ -6,7 +6,7 @@ import (
 )
 
 var (
-	winPath   = "%SystemRoot%\\System32\\drivers\\etc\\hosts"
+	winPath   = "C:\\Windows\\System32\\drivers\\etc\\hosts"
 	linuxPath = "/etc/hosts"
 )
 
